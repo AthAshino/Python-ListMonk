@@ -11,7 +11,6 @@
     Do not edit the class manually.
 """  # noqa: E501
 
-
 from setuptools import setup, find_packages  # noqa: H301
 
 # To install the library, run the following
@@ -20,8 +19,6 @@ from setuptools import setup, find_packages  # noqa: H301
 #
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
-NAME = "listmonk-client"
-VERSION = "1.0.0"
 PYTHON_REQUIRES = ">=3.7"
 REQUIRES = [
     "urllib3 >= 1.25.3, < 2.1.0",
@@ -31,8 +28,8 @@ REQUIRES = [
 ]
 
 setup(
-    name=NAME,
-    version=VERSION,
+    name="python-listmonk",
+    version="0.0.1",
     description="Listmonk",
     author="OpenAPI Generator community",
     author_email="team@openapitools.org",
