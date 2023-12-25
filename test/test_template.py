@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.template import Template
+from listmonk.models.template import Template
 
 class TestTemplate(unittest.TestCase):
     """Template unit test stubs"""

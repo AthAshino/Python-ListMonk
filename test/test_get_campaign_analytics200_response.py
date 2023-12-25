@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.get_campaign_analytics200_response import GetCampaignAnalytics200Response
+from listmonk.models.get_campaign_analytics200_response import GetCampaignAnalytics200Response
 
 class TestGetCampaignAnalytics200Response(unittest.TestCase):
     """GetCampaignAnalytics200Response unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.bounce_results_inner import BounceResultsInner
+from listmonk.models.bounce_results_inner import BounceResultsInner
 
 class TestBounceResultsInner(unittest.TestCase):
     """BounceResultsInner unit test stubs"""

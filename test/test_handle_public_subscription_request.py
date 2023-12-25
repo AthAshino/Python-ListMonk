@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.handle_public_subscription_request import HandlePublicSubscriptionRequest
+from listmonk.models.handle_public_subscription_request import HandlePublicSubscriptionRequest
 
 class TestHandlePublicSubscriptionRequest(unittest.TestCase):
     """HandlePublicSubscriptionRequest unit test stubs"""

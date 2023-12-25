@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.settings import Settings
+from listmonk.models.settings import Settings
 
 class TestSettings(unittest.TestCase):
     """Settings unit test stubs"""

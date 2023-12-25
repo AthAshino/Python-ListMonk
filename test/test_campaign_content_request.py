@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.campaign_content_request import CampaignContentRequest
+from listmonk.models.campaign_content_request import CampaignContentRequest
 
 class TestCampaignContentRequest(unittest.TestCase):
     """CampaignContentRequest unit test stubs"""

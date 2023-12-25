@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.get_server_config200_response import GetServerConfig200Response
+from listmonk.models.get_server_config200_response import GetServerConfig200Response
 
 class TestGetServerConfig200Response(unittest.TestCase):
     """GetServerConfig200Response unit test stubs"""

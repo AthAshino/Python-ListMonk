@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.settings_api import SettingsApi
+from listmonk.api.settings_api import SettingsApi
 
 
 class TestSettingsApi(unittest.TestCase):

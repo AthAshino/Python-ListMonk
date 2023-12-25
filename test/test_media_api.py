@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.media_api import MediaApi
+from listmonk.api.media_api import MediaApi
 
 
 class TestMediaApi(unittest.TestCase):

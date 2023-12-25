@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.get_public_lists200_response_inner import GetPublicLists200ResponseInner
+from listmonk.models.get_public_lists200_response_inner import GetPublicLists200ResponseInner
 
 class TestGetPublicLists200ResponseInner(unittest.TestCase):
     """GetPublicLists200ResponseInner unit test stubs"""

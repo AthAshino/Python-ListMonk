@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.subscriber_query_request import SubscriberQueryRequest
+from listmonk.models.subscriber_query_request import SubscriberQueryRequest
 
 class TestSubscriberQueryRequest(unittest.TestCase):
     """SubscriberQueryRequest unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.smtp_test import SMTPTest
+from listmonk.models.smtp_test import SMTPTest
 
 class TestSMTPTest(unittest.TestCase):
     """SMTPTest unit test stubs"""

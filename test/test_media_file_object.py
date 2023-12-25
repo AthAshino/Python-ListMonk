@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.media_file_object import MediaFileObject
+from listmonk.models.media_file_object import MediaFileObject
 
 class TestMediaFileObject(unittest.TestCase):
     """MediaFileObject unit test stubs"""

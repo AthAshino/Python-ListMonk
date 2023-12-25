@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.dashboard_chart import DashboardChart
+from listmonk.models.dashboard_chart import DashboardChart
 
 class TestDashboardChart(unittest.TestCase):
     """DashboardChart unit test stubs"""

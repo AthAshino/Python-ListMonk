@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.campaigns_api import CampaignsApi
+from listmonk.api.campaigns_api import CampaignsApi
 
 
 class TestCampaignsApi(unittest.TestCase):

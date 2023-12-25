@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.dashboard_count_data_subscribers import DashboardCountDataSubscribers
+from listmonk.models.dashboard_count_data_subscribers import DashboardCountDataSubscribers
 
 class TestDashboardCountDataSubscribers(unittest.TestCase):
     """DashboardCountDataSubscribers unit test stubs"""

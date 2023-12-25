@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.import_api import ImportApi
+from listmonk.api.import_api import ImportApi
 
 
 class TestImportApi(unittest.TestCase):

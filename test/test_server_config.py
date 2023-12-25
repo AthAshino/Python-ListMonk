@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.server_config import ServerConfig
+from listmonk.models.server_config import ServerConfig
 
 class TestServerConfig(unittest.TestCase):
     """ServerConfig unit test stubs"""

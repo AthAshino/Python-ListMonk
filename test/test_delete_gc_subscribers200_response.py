@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.delete_gc_subscribers200_response import DeleteGCSubscribers200Response
+from listmonk.models.delete_gc_subscribers200_response import DeleteGCSubscribers200Response
 
 class TestDeleteGCSubscribers200Response(unittest.TestCase):
     """DeleteGCSubscribers200Response unit test stubs"""

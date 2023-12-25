@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.language_pack import LanguagePack
+from listmonk.models.language_pack import LanguagePack
 
 class TestLanguagePack(unittest.TestCase):
     """LanguagePack unit test stubs"""

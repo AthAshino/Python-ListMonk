@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.subscriber_lists_inner import SubscriberListsInner
+from listmonk.models.subscriber_lists_inner import SubscriberListsInner
 
 class TestSubscriberListsInner(unittest.TestCase):
     """SubscriberListsInner unit test stubs"""

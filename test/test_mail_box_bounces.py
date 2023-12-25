@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.mail_box_bounces import MailBoxBounces
+from listmonk.models.mail_box_bounces import MailBoxBounces
 
 class TestMailBoxBounces(unittest.TestCase):
     """MailBoxBounces unit test stubs"""

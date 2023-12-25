@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.new_subscriber_attribs import NewSubscriberAttribs
+from listmonk.models.new_subscriber_attribs import NewSubscriberAttribs
 
 class TestNewSubscriberAttribs(unittest.TestCase):
     """NewSubscriberAttribs unit test stubs"""

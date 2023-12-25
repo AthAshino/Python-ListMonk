@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.dashboard_count_data_campaigns_by_status import DashboardCountDataCampaignsByStatus
+from listmonk.models.dashboard_count_data_campaigns_by_status import DashboardCountDataCampaignsByStatus
 
 class TestDashboardCountDataCampaignsByStatus(unittest.TestCase):
     """DashboardCountDataCampaignsByStatus unit test stubs"""

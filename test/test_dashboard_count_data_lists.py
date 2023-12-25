@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.dashboard_count_data_lists import DashboardCountDataLists
+from listmonk.models.dashboard_count_data_lists import DashboardCountDataLists
 
 class TestDashboardCountDataLists(unittest.TestCase):
     """DashboardCountDataLists unit test stubs"""

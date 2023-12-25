@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.update_campaign_archive_by_id_request import UpdateCampaignArchiveByIdRequest
+from listmonk.models.update_campaign_archive_by_id_request import UpdateCampaignArchiveByIdRequest
 
 class TestUpdateCampaignArchiveByIdRequest(unittest.TestCase):
     """UpdateCampaignArchiveByIdRequest unit test stubs"""

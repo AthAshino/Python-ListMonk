@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.maintenance_api import MaintenanceApi
+from listmonk.api.maintenance_api import MaintenanceApi
 
 
 class TestMaintenanceApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
 
 class TestGetHealthCheck200Response(unittest.TestCase):
     """GetHealthCheck200Response unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.campaign_stats import CampaignStats
+from listmonk.models.campaign_stats import CampaignStats
 
 class TestCampaignStats(unittest.TestCase):
     """CampaignStats unit test stubs"""

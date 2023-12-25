@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.server_config_data_langs_inner import ServerConfigDataLangsInner
+from listmonk.models.server_config_data_langs_inner import ServerConfigDataLangsInner
 
 class TestServerConfigDataLangsInner(unittest.TestCase):
     """ServerConfigDataLangsInner unit test stubs"""

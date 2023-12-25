@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.upload_media200_response import UploadMedia200Response
+from listmonk.models.upload_media200_response import UploadMedia200Response
 
 class TestUploadMedia200Response(unittest.TestCase):
     """UploadMedia200Response unit test stubs"""

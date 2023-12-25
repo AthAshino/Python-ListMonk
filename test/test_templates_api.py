@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.templates_api import TemplatesApi
+from listmonk.api.templates_api import TemplatesApi
 
 
 class TestTemplatesApi(unittest.TestCase):

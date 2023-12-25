@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.logs_api import LogsApi
+from listmonk.api.logs_api import LogsApi
 
 
 class TestLogsApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.get_template_by_id200_response import GetTemplateById200Response
+from listmonk.models.get_template_by_id200_response import GetTemplateById200Response
 
 class TestGetTemplateById200Response(unittest.TestCase):
     """GetTemplateById200Response unit test stubs"""

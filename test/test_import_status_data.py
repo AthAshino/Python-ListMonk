@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.import_status_data import ImportStatusData
+from listmonk.models.import_status_data import ImportStatusData
 
 class TestImportStatusData(unittest.TestCase):
     """ImportStatusData unit test stubs"""

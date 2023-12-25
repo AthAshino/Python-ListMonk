@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.subscribers_api import SubscribersApi
+from listmonk.api.subscribers_api import SubscribersApi
 
 
 class TestSubscribersApi(unittest.TestCase):

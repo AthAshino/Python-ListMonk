@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.subscriber_profile_attribs import SubscriberProfileAttribs
+from listmonk.models.subscriber_profile_attribs import SubscriberProfileAttribs
 
 class TestSubscriberProfileAttribs(unittest.TestCase):
     """SubscriberProfileAttribs unit test stubs"""

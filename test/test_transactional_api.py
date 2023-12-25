@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.transactional_api import TransactionalApi
+from listmonk.api.transactional_api import TransactionalApi
 
 
 class TestTransactionalApi(unittest.TestCase):

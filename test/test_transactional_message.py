@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.transactional_message import TransactionalMessage
+from listmonk.models.transactional_message import TransactionalMessage
 
 class TestTransactionalMessage(unittest.TestCase):
     """TransactionalMessage unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.get_dashboard_counts200_response import GetDashboardCounts200Response
+from listmonk.models.get_dashboard_counts200_response import GetDashboardCounts200Response
 
 class TestGetDashboardCounts200Response(unittest.TestCase):
     """GetDashboardCounts200Response unit test stubs"""

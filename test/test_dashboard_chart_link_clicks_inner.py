@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.dashboard_chart_link_clicks_inner import DashboardChartLinkClicksInner
+from listmonk.models.dashboard_chart_link_clicks_inner import DashboardChartLinkClicksInner
 
 class TestDashboardChartLinkClicksInner(unittest.TestCase):
     """DashboardChartLinkClicksInner unit test stubs"""

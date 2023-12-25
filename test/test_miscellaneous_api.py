@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.miscellaneous_api import MiscellaneousApi
+from listmonk.api.miscellaneous_api import MiscellaneousApi
 
 
 class TestMiscellaneousApi(unittest.TestCase):

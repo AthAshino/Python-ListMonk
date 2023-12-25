@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.get_i18n_lang200_response import GetI18nLang200Response
+from listmonk.models.get_i18n_lang200_response import GetI18nLang200Response
 
 class TestGetI18nLang200Response(unittest.TestCase):
     """GetI18nLang200Response unit test stubs"""

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.new_list import NewList
+from listmonk.models.new_list import NewList
 
 class TestNewList(unittest.TestCase):
     """NewList unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.bounces_api import BouncesApi
+from listmonk.api.bounces_api import BouncesApi
 
 
 class TestBouncesApi(unittest.TestCase):

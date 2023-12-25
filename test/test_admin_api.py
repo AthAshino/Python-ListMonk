@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.admin_api import AdminApi
+from listmonk.api.admin_api import AdminApi
 
 
 class TestAdminApi(unittest.TestCase):

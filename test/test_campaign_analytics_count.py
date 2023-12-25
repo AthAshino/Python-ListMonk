@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.campaign_analytics_count import CampaignAnalyticsCount
+from listmonk.models.campaign_analytics_count import CampaignAnalyticsCount
 
 class TestCampaignAnalyticsCount(unittest.TestCase):
     """CampaignAnalyticsCount unit test stubs"""

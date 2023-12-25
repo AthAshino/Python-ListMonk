@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.create_list200_response import CreateList200Response
+from listmonk.models.create_list200_response import CreateList200Response
 
 class TestCreateList200Response(unittest.TestCase):
     """CreateList200Response unit test stubs"""

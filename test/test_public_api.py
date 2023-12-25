@@ -14,7 +14,7 @@
 
 import unittest
 
-from listmonk_client.api.public_api import PublicApi
+from listmonk.api.public_api import PublicApi
 
 
 class TestPublicApi(unittest.TestCase):

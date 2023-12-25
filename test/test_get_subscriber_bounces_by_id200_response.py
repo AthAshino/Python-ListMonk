@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from listmonk_client.models.get_subscriber_bounces_by_id200_response import GetSubscriberBouncesById200Response
+from listmonk.models.get_subscriber_bounces_by_id200_response import GetSubscriberBouncesById200Response
 
 class TestGetSubscriberBouncesById200Response(unittest.TestCase):
     """GetSubscriberBouncesById200Response unit test stubs"""
