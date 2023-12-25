@@ -24,11 +24,11 @@ import tempfile
 from urllib.parse import quote
 from typing import Tuple, Optional, List
 
-from listmonk_client.configuration import Configuration
-from listmonk_client.api_response import ApiResponse
-import listmonk_client.models
-from listmonk_client import rest
-from listmonk_client.exceptions import (
+from listmonk.configuration import Configuration
+from listmonk.api_response import ApiResponse
+import listmonk.models
+from listmonk import rest
+from listmonk.exceptions import (
     ApiValueError,
     ApiException,
     BadRequestException,
@@ -425,7 +425,7 @@ class ApiClient:
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(listmonk_client.models, klass)
+                klass = getattr(listmonk.models, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

@@ -21,8 +21,8 @@ import json
 from typing import Any, ClassVar, Dict, List, Optional, Union
 from pydantic import BaseModel, StrictBool, StrictInt, StrictStr
 from pydantic import Field
-from listmonk_client.models.mail_box_bounces import MailBoxBounces
-from listmonk_client.models.smtp_settings import SMTPSettings
+from listmonk.models.mail_box_bounces import MailBoxBounces
+from listmonk.models.smtp_settings import SMTPSettings
 try:
     from typing import Self
 except ImportError:

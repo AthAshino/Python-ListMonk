@@ -24,14 +24,14 @@ handles deletion of uploaded media.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -41,15 +41,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.MediaApi(api_client)
+    api_instance = listmonk.MediaApi(api_client)
     id = 56  # int | The id value of the list you want to delete.
     
     try:
@@ -102,14 +102,14 @@ handles retrieval of uploaded media.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_media200_response import GetMedia200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_media200_response import GetMedia200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -119,15 +119,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.MediaApi(api_client)
+    api_instance = listmonk.MediaApi(api_client)
     
     try:
         api_response = api_instance.get_media()
@@ -176,14 +176,14 @@ handles retrieval of uploaded media.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.upload_media200_response import UploadMedia200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.upload_media200_response import UploadMedia200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -193,15 +193,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.MediaApi(api_client)
+    api_instance = listmonk.MediaApi(api_client)
     id = 56  # int | media file id
     
     try:
@@ -254,14 +254,14 @@ handles media file uploads.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.upload_media200_response import UploadMedia200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.upload_media200_response import UploadMedia200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -271,15 +271,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.MediaApi(api_client)
+    api_instance = listmonk.MediaApi(api_client)
     
     try:
         api_response = api_instance.upload_media()

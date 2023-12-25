@@ -23,14 +23,14 @@ returns settings from DB
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_settings200_response import GetSettings200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_settings200_response import GetSettings200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -40,15 +40,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SettingsApi(api_client)
+    api_instance = listmonk.SettingsApi(api_client)
     
     try:
         api_response = api_instance.get_settings()
@@ -97,15 +97,15 @@ test smtp settings
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.models.smtp_test import SMTPTest
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.smtp_test import SMTPTest
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -115,16 +115,16 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SettingsApi(api_client)
-    smtp_test = listmonk_client.SMTPTest()  # SMTPTest | updated SMTP settings field values (optional)
+    api_instance = listmonk.SettingsApi(api_client)
+    smtp_test = listmonk.SMTPTest()  # SMTPTest | updated SMTP settings field values (optional)
     
     try:
         api_response = api_instance.test_smtp_settings(smtp_test=smtp_test)
@@ -176,15 +176,15 @@ returns updated settings from the DB.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.models.settings import Settings
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.settings import Settings
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -194,16 +194,16 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SettingsApi(api_client)
-    settings = listmonk_client.Settings()  # Settings | updated settings field values (optional)
+    api_instance = listmonk.SettingsApi(api_client)
+    settings = listmonk.Settings()  # Settings | updated settings field values (optional)
     
     try:
         api_response = api_instance.update_settings(settings=settings)

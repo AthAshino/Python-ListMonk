@@ -26,14 +26,14 @@ handles deletion of templates
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -43,15 +43,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.TemplatesApi(api_client)
+    api_instance = listmonk.TemplatesApi(api_client)
     id = 56  # int | The id value of the template you want to delete.
     
     try:
@@ -104,14 +104,14 @@ handles retrieval of templates
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_template_by_id200_response import GetTemplateById200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_template_by_id200_response import GetTemplateById200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -121,15 +121,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.TemplatesApi(api_client)
+    api_instance = listmonk.TemplatesApi(api_client)
     id = 56  # int | The id value of the template you want to get.
     no_body = True  # bool | boolean flag for response with/without body (optional)
     
@@ -184,14 +184,14 @@ handles retrieval of templates
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_templates200_response import GetTemplates200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_templates200_response import GetTemplates200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -201,15 +201,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.TemplatesApi(api_client)
+    api_instance = listmonk.TemplatesApi(api_client)
     no_body = True  # bool | boolean flag for response with/without body
     
     try:
@@ -262,13 +262,13 @@ get the HTML preview of a template.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -278,15 +278,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.TemplatesApi(api_client)
+    api_instance = listmonk.TemplatesApi(api_client)
     template_type = 'template_type_example'  # str | type of template (optional)
     body = 'body_example'  # str | template body (optional)
     
@@ -341,13 +341,13 @@ renders the HTML preview of a template.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -357,15 +357,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.TemplatesApi(api_client)
+    api_instance = listmonk.TemplatesApi(api_client)
     id = 56  # int | The id value of the template you want to get.
     template_type = 'template_type_example'  # str | type of template (optional)
     body = 'body_example'  # str | template body (optional)
@@ -422,14 +422,14 @@ handles template modification.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.template import Template
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.template import Template
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -439,15 +439,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.TemplatesApi(api_client)
+    api_instance = listmonk.TemplatesApi(api_client)
     id = 56  # int | The id value of the template you want to set to the default template.
     
     try:

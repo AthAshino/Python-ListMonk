@@ -30,7 +30,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.campaign import Campaign
+from listmonk.models.campaign import Campaign
 
 # TODO update the JSON string below
 json = "{}"

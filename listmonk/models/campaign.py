@@ -21,7 +21,7 @@ import json
 from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel, StrictInt, StrictStr, field_validator
 from pydantic import Field
-from listmonk_client.models.bounce_results_inner_campaign import BounceResultsInnerCampaign
+from listmonk.models.bounce_results_inner_campaign import BounceResultsInnerCampaign
 try:
     from typing import Self
 except ImportError:

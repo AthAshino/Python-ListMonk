@@ -19,7 +19,7 @@ import ssl
 
 import urllib3
 
-from listmonk_client.exceptions import ApiException, ApiValueError
+from listmonk.exceptions import ApiException, ApiValueError
 
 RESTResponseType = urllib3.HTTPResponse
 

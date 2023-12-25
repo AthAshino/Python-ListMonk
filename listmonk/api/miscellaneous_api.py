@@ -27,15 +27,15 @@ from pydantic import Field
 from typing_extensions import Annotated
 from pydantic import StrictStr
 
-from listmonk_client.models.get_dashboard_charts200_response import GetDashboardCharts200Response
-from listmonk_client.models.get_dashboard_counts200_response import GetDashboardCounts200Response
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.models.get_i18n_lang200_response import GetI18nLang200Response
-from listmonk_client.models.get_server_config200_response import GetServerConfig200Response
+from listmonk.models.get_dashboard_charts200_response import GetDashboardCharts200Response
+from listmonk.models.get_dashboard_counts200_response import GetDashboardCounts200Response
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.get_i18n_lang200_response import GetI18nLang200Response
+from listmonk.models.get_server_config200_response import GetServerConfig200Response
 
-from listmonk_client.api_client import ApiClient
-from listmonk_client.api_response import ApiResponse
-from listmonk_client.rest import RESTResponseType
+from listmonk.api_client import ApiClient
+from listmonk.api_response import ApiResponse
+from listmonk.rest import RESTResponseType
 
 
 class MiscellaneousApi:

@@ -20,7 +20,7 @@ import json
 
 from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel
-from listmonk_client.models.media_file_object import MediaFileObject
+from listmonk.models.media_file_object import MediaFileObject
 try:
     from typing import Self
 except ImportError:

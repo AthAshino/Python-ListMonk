@@ -20,8 +20,8 @@ import json
 
 from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel, StrictInt, StrictStr
-from listmonk_client.models.subscriber_lists_inner import SubscriberListsInner
-from listmonk_client.models.subscriber_profile_attribs import SubscriberProfileAttribs
+from listmonk.models.subscriber_lists_inner import SubscriberListsInner
+from listmonk.models.subscriber_profile_attribs import SubscriberProfileAttribs
 try:
     from typing import Self
 except ImportError:

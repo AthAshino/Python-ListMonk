@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.media_file_object import MediaFileObject
+from listmonk.models.media_file_object import MediaFileObject
 
 # TODO update the JSON string below
 json = "{}"

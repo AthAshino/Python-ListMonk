@@ -37,14 +37,14 @@ bulk blocklists subscribers based on an arbitrary SQL expression.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -54,15 +54,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     body = 'body_example'  # str | Arbitrary SQL expression. (optional)
     
     try:
@@ -115,15 +115,15 @@ handles creation of new subscriber
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.create_subscriber200_response import CreateSubscriber200Response
-from listmonk_client.models.new_subscriber import NewSubscriber
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.create_subscriber200_response import CreateSubscriber200Response
+from listmonk.models.new_subscriber import NewSubscriber
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -133,16 +133,16 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
-    new_subscriber = listmonk_client.NewSubscriber()  # NewSubscriber | new subscriber info (optional)
+    api_instance = listmonk.SubscribersApi(api_client)
+    new_subscriber = listmonk.NewSubscriber()  # NewSubscriber | new subscriber info (optional)
     
     try:
         api_response = api_instance.create_subscriber(new_subscriber=new_subscriber)
@@ -194,14 +194,14 @@ deletes a subscriber's bounce records
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -211,15 +211,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     id = 56  # int | subscriber id
     
     try:
@@ -272,14 +272,14 @@ handles subscriber deletion based on id
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -289,15 +289,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     id = 56  # int | The id value of the subscriber you want to get.
     
     try:
@@ -350,14 +350,14 @@ handles subscribers deletion
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -367,15 +367,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     id = 'id_example'  # str | subscriber id/s to be deleted
     
     try:
@@ -428,14 +428,14 @@ bulk deletes based on an arbitrary SQL expression.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -445,15 +445,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     body = 'body_example'  # str | Arbitrary SQL expression. (optional)
     
     try:
@@ -506,14 +506,14 @@ retrieves a subscriber's profile
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.subscriber_data import SubscriberData
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.subscriber_data import SubscriberData
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -523,15 +523,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     id = 56  # int | The id value of subscriber profile you want to export
     
     try:
@@ -584,14 +584,14 @@ retrieves a subscriber's bounce records
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_subscriber_bounces_by_id200_response import GetSubscriberBouncesById200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_subscriber_bounces_by_id200_response import GetSubscriberBouncesById200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -601,15 +601,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     id = 56  # int | subscriber id
     
     try:
@@ -662,14 +662,14 @@ handles the retrieval of a single subscriber by ID.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.create_subscriber200_response import CreateSubscriber200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.create_subscriber200_response import CreateSubscriber200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -679,15 +679,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     id = 56  # int | The id value of the subscriber you want to get.
     
     try:
@@ -740,14 +740,14 @@ returns all subscribers.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_subscribers200_response import GetSubscribers200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_subscribers200_response import GetSubscribers200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -757,15 +757,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     page = 56  # int | number of records to skip (optional)
     per_page = 56  # int | max number of records to return per page (optional)
     query = 'query_example'  # str | query subscribers with an SQL expression. (optional)
@@ -822,15 +822,15 @@ handles blocklisting of subscriber list
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.models.subscriber_query_request import SubscriberQueryRequest
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.subscriber_query_request import SubscriberQueryRequest
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -840,16 +840,16 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
-    subscriber_query_request = listmonk_client.SubscriberQueryRequest()  # SubscriberQueryRequest | The list of subscribers to blocklist (optional)
+    api_instance = listmonk.SubscribersApi(api_client)
+    subscriber_query_request = listmonk.SubscriberQueryRequest()  # SubscriberQueryRequest | The list of subscribers to blocklist (optional)
     
     try:
         api_response = api_instance.manage_blocklist_by_subscriber_list(subscriber_query_request=subscriber_query_request)
@@ -901,15 +901,15 @@ handles the blocklisting of one or more subscribers.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.models.subscriber_query_request import SubscriberQueryRequest
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.subscriber_query_request import SubscriberQueryRequest
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -919,17 +919,17 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     id = 56  # int | The id value of the subscriber you want to blocklist.
-    subscriber_query_request = listmonk_client.SubscriberQueryRequest()  # SubscriberQueryRequest | The id of subscriber to add or remove (optional)
+    subscriber_query_request = listmonk.SubscriberQueryRequest()  # SubscriberQueryRequest | The id of subscriber to add or remove (optional)
     
     try:
         api_response = api_instance.manage_blocklist_subscribers_by_id(id, subscriber_query_request=subscriber_query_request)
@@ -982,15 +982,15 @@ handles bulk addition or removal of subscribers for a specified list id
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.models.subscriber_query_request import SubscriberQueryRequest
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.subscriber_query_request import SubscriberQueryRequest
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -1000,17 +1000,17 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     id = 56  # int | The id of list you want to update
-    subscriber_query_request = listmonk_client.SubscriberQueryRequest()  # SubscriberQueryRequest | The list of subscribers to add or remove (optional)
+    subscriber_query_request = listmonk.SubscriberQueryRequest()  # SubscriberQueryRequest | The list of subscribers to add or remove (optional)
     
     try:
         api_response = api_instance.manage_subscriber_list_by_id(id, subscriber_query_request=subscriber_query_request)
@@ -1063,15 +1063,15 @@ handles bulk addition or removal of subscribers
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.models.subscriber_query_request import SubscriberQueryRequest
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.subscriber_query_request import SubscriberQueryRequest
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -1081,16 +1081,16 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
-    subscriber_query_request = listmonk_client.SubscriberQueryRequest()  # SubscriberQueryRequest | The list of subscribers details to add or remove (optional)
+    api_instance = listmonk.SubscribersApi(api_client)
+    subscriber_query_request = listmonk.SubscriberQueryRequest()  # SubscriberQueryRequest | The list of subscribers details to add or remove (optional)
     
     try:
         api_response = api_instance.manage_subscriber_lists(subscriber_query_request=subscriber_query_request)
@@ -1142,14 +1142,14 @@ bulk adds/removes/unsubscribes subscribers from one or more lists based on an ar
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -1159,15 +1159,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     body = 'body_example'  # str | Arbitrary SQL expression. (optional)
     
     try:
@@ -1220,14 +1220,14 @@ sends an optin confirmation e-mail to a subscriber.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -1237,15 +1237,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     id = 56  # int | sends an optin confirmation e-mail to a subscriber
     
     try:
@@ -1298,15 +1298,15 @@ modify subscriber data
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.create_subscriber200_response import CreateSubscriber200Response
-from listmonk_client.models.update_subscriber import UpdateSubscriber
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.create_subscriber200_response import CreateSubscriber200Response
+from listmonk.models.update_subscriber import UpdateSubscriber
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -1316,17 +1316,17 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.SubscribersApi(api_client)
+    api_instance = listmonk.SubscribersApi(api_client)
     id = 56  # int | The id of subscriber to update
-    update_subscriber = listmonk_client.UpdateSubscriber()  # UpdateSubscriber | new subscriber info (optional)
+    update_subscriber = listmonk.UpdateSubscriber()  # UpdateSubscriber | new subscriber info (optional)
     
     try:
         api_response = api_instance.update_subscriber_by_id(id, update_subscriber=update_subscriber)

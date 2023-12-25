@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.server_config_data_langs_inner import ServerConfigDataLangsInner
+from listmonk.models.server_config_data_langs_inner import ServerConfigDataLangsInner
 
 # TODO update the JSON string below
 json = "{}"

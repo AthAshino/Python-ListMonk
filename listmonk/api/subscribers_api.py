@@ -29,18 +29,18 @@ from pydantic import StrictInt, StrictStr
 
 from typing import Optional
 
-from listmonk_client.models.create_subscriber200_response import CreateSubscriber200Response
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.models.get_subscriber_bounces_by_id200_response import GetSubscriberBouncesById200Response
-from listmonk_client.models.get_subscribers200_response import GetSubscribers200Response
-from listmonk_client.models.new_subscriber import NewSubscriber
-from listmonk_client.models.subscriber_data import SubscriberData
-from listmonk_client.models.subscriber_query_request import SubscriberQueryRequest
-from listmonk_client.models.update_subscriber import UpdateSubscriber
+from listmonk.models.create_subscriber200_response import CreateSubscriber200Response
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.get_subscriber_bounces_by_id200_response import GetSubscriberBouncesById200Response
+from listmonk.models.get_subscribers200_response import GetSubscribers200Response
+from listmonk.models.new_subscriber import NewSubscriber
+from listmonk.models.subscriber_data import SubscriberData
+from listmonk.models.subscriber_query_request import SubscriberQueryRequest
+from listmonk.models.update_subscriber import UpdateSubscriber
 
-from listmonk_client.api_client import ApiClient
-from listmonk_client.api_response import ApiResponse
-from listmonk_client.rest import RESTResponseType
+from listmonk.api_client import ApiClient
+from listmonk.api_response import ApiResponse
+from listmonk.rest import RESTResponseType
 
 
 class SubscribersApi:

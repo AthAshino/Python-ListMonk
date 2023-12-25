@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.mail_box_bounces import MailBoxBounces
+from listmonk.models.mail_box_bounces import MailBoxBounces
 
 # TODO update the JSON string below
 json = "{}"

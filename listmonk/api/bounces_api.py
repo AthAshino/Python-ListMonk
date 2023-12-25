@@ -29,13 +29,13 @@ from pydantic import StrictBool, StrictInt, StrictStr
 
 from typing import Optional
 
-from listmonk_client.models.get_bounce_by_id200_response import GetBounceById200Response
-from listmonk_client.models.get_bounces200_response import GetBounces200Response
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.get_bounce_by_id200_response import GetBounceById200Response
+from listmonk.models.get_bounces200_response import GetBounces200Response
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
 
-from listmonk_client.api_client import ApiClient
-from listmonk_client.api_response import ApiResponse
-from listmonk_client.rest import RESTResponseType
+from listmonk.api_client import ApiClient
+from listmonk.api_response import ApiResponse
+from listmonk.rest import RESTResponseType
 
 
 class BouncesApi:

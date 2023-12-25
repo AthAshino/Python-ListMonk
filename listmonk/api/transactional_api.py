@@ -27,12 +27,12 @@ from pydantic import Field
 from typing_extensions import Annotated
 from typing import Optional
 
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.models.transactional_message import TransactionalMessage
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.transactional_message import TransactionalMessage
 
-from listmonk_client.api_client import ApiClient
-from listmonk_client.api_response import ApiResponse
-from listmonk_client.rest import RESTResponseType
+from listmonk.api_client import ApiClient
+from listmonk.api_response import ApiResponse
+from listmonk.rest import RESTResponseType
 
 
 class TransactionalApi:

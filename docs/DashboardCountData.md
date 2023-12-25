@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.dashboard_count_data import DashboardCountData
+from listmonk.models.dashboard_count_data import DashboardCountData
 
 # TODO update the JSON string below
 json = "{}"

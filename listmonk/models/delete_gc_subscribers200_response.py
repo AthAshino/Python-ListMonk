@@ -20,7 +20,7 @@ import json
 
 from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel
-from listmonk_client.models.delete_gc_subscribers200_response_data import DeleteGCSubscribers200ResponseData
+from listmonk.models.delete_gc_subscribers200_response_data import DeleteGCSubscribers200ResponseData
 try:
     from typing import Self
 except ImportError:

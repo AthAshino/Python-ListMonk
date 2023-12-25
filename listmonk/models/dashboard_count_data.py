@@ -20,9 +20,9 @@ import json
 
 from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel, StrictInt
-from listmonk_client.models.dashboard_count_data_campaigns import DashboardCountDataCampaigns
-from listmonk_client.models.dashboard_count_data_lists import DashboardCountDataLists
-from listmonk_client.models.dashboard_count_data_subscribers import DashboardCountDataSubscribers
+from listmonk.models.dashboard_count_data_campaigns import DashboardCountDataCampaigns
+from listmonk.models.dashboard_count_data_lists import DashboardCountDataLists
+from listmonk.models.dashboard_count_data_subscribers import DashboardCountDataSubscribers
 try:
     from typing import Self
 except ImportError:

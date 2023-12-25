@@ -24,14 +24,14 @@ handles bounce deletion, either a single one (ID in the URI), or a list.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -41,15 +41,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.BouncesApi(api_client)
+    api_instance = listmonk.BouncesApi(api_client)
     id = 56  # int | The id value of the bounce you want to delete.
     
     try:
@@ -102,14 +102,14 @@ handles retrieval of bounce records.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -119,15 +119,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.BouncesApi(api_client)
+    api_instance = listmonk.BouncesApi(api_client)
     all = True  # bool | flag for multiple bounce record deletion (optional)
     id = 'id_example'  # str | list of bounce ids to delete (optional)
     
@@ -182,14 +182,14 @@ handles retrieval of bounce record by id
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_bounce_by_id200_response import GetBounceById200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_bounce_by_id200_response import GetBounceById200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -199,15 +199,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.BouncesApi(api_client)
+    api_instance = listmonk.BouncesApi(api_client)
     id = 56  # int | The id value of the bounce you want to retreive.
     
     try:
@@ -260,14 +260,14 @@ handles retrieval of bounce records.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_bounces200_response import GetBounces200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_bounces200_response import GetBounces200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -277,15 +277,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.BouncesApi(api_client)
+    api_instance = listmonk.BouncesApi(api_client)
     campaign_id = 56  # int | bounce record retrieval of particular campaign (optional)
     page = 56  # int | total number of pages (optional)
     per_page = 56  # int | number of items per page (optional)

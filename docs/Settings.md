@@ -63,7 +63,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.settings import Settings
+from listmonk.models.settings import Settings
 
 # TODO update the JSON string below
 json = "{}"

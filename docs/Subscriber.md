@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.subscriber import Subscriber
+from listmonk.models.subscriber import Subscriber
 
 # TODO update the JSON string below
 json = "{}"

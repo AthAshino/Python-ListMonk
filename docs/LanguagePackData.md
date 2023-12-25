@@ -561,7 +561,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.language_pack_data import LanguagePackData
+from listmonk.models.language_pack_data import LanguagePackData
 
 # TODO update the JSON string below
 json = "{}"

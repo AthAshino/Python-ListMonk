@@ -20,7 +20,7 @@ import json
 
 from typing import Any, ClassVar, Dict, List, Optional, Union
 from pydantic import BaseModel, StrictBool, StrictFloat, StrictInt, StrictStr
-from listmonk_client.models.campaign_request_send_at import CampaignRequestSendAt
+from listmonk.models.campaign_request_send_at import CampaignRequestSendAt
 try:
     from typing import Self
 except ImportError:

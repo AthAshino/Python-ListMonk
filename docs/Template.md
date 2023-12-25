@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.template import Template
+from listmonk.models.template import Template
 
 # TODO update the JSON string below
 json = "{}"

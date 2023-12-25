@@ -27,13 +27,13 @@ from pydantic import Field
 from typing_extensions import Annotated
 from typing import List, Optional
 
-from listmonk_client.models.get_public_lists200_response_inner import GetPublicLists200ResponseInner
-from listmonk_client.models.handle_public_subscription200_response import HandlePublicSubscription200Response
-from listmonk_client.models.handle_public_subscription_request import HandlePublicSubscriptionRequest
+from listmonk.models.get_public_lists200_response_inner import GetPublicLists200ResponseInner
+from listmonk.models.handle_public_subscription200_response import HandlePublicSubscription200Response
+from listmonk.models.handle_public_subscription_request import HandlePublicSubscriptionRequest
 
-from listmonk_client.api_client import ApiClient
-from listmonk_client.api_response import ApiResponse
-from listmonk_client.rest import RESTResponseType
+from listmonk.api_client import ApiClient
+from listmonk.api_response import ApiResponse
+from listmonk.rest import RESTResponseType
 
 
 class PublicApi:

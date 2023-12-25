@@ -25,15 +25,15 @@ handles list creation
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.create_list200_response import CreateList200Response
-from listmonk_client.models.new_list import NewList
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.create_list200_response import CreateList200Response
+from listmonk.models.new_list import NewList
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -43,16 +43,16 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.ListsApi(api_client)
-    new_list = listmonk_client.NewList()  # NewList | new list info (optional)
+    api_instance = listmonk.ListsApi(api_client)
+    new_list = listmonk.NewList()  # NewList | new list info (optional)
     
     try:
         api_response = api_instance.create_list(new_list=new_list)
@@ -104,14 +104,14 @@ handles list deletion, either a single one (ID in the URI), or a list.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -121,15 +121,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.ListsApi(api_client)
+    api_instance = listmonk.ListsApi(api_client)
     list_id = 56  # int | The id value of the lists you want to delete.
     
     try:
@@ -182,14 +182,14 @@ retrieves lists with additional metadata like subscriber counts. This may be slo
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.create_list200_response import CreateList200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.create_list200_response import CreateList200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -199,15 +199,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.ListsApi(api_client)
+    api_instance = listmonk.ListsApi(api_client)
     list_id = 56  # int | The id value of the list you want to retreive.
     
     try:
@@ -260,14 +260,14 @@ retrieves lists with additional metadata like subscriber counts. This may be slo
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_lists200_response import GetLists200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_lists200_response import GetLists200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -277,15 +277,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.ListsApi(api_client)
+    api_instance = listmonk.ListsApi(api_client)
     page = 56  # int | total number of pages (optional)
     per_page = 56  # int | number of items per page (optional)
     query = 'query_example'  # str | Optional string to search a list by name. (optional)
@@ -349,15 +349,15 @@ handles list modification
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.create_list200_response import CreateList200Response
-from listmonk_client.models.list import List
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.create_list200_response import CreateList200Response
+from listmonk.models.list import List
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -367,15 +367,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.ListsApi(api_client)
+    api_instance = listmonk.ListsApi(api_client)
     list_id = 56  # int | The id value of the list you want to update
     list = None  # List | updated list field values (optional)
     

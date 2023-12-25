@@ -29,15 +29,15 @@ from pydantic import StrictBool, StrictInt, StrictStr
 
 from typing import Optional
 
-from listmonk_client.models.create_list200_response import CreateList200Response
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.models.get_lists200_response import GetLists200Response
-from listmonk_client.models.list import List
-from listmonk_client.models.new_list import NewList
+from listmonk.models.create_list200_response import CreateList200Response
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.get_lists200_response import GetLists200Response
+from listmonk.models.list import List
+from listmonk.models.new_list import NewList
 
-from listmonk_client.api_client import ApiClient
-from listmonk_client.api_response import ApiResponse
-from listmonk_client.rest import RESTResponseType
+from listmonk.api_client import ApiClient
+from listmonk.api_response import ApiResponse
+from listmonk.rest import RESTResponseType
 
 
 class ListsApi:

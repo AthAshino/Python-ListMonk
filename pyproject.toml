@@ -32,7 +32,7 @@ build-backend = "setuptools.build_meta"
 extension-pkg-whitelist = "pydantic"
 
 [tool.semantic_release]
-version_variables = [ "listmonk_client/__init__.py:__version__",]
+version_variables = [ "listmonk/__init__.py:__version__",]
 version_toml = [ "pyproject.toml:tool.poetry.version",]
 branch = "main"
 build_command = "pip install poetry && poetry build"

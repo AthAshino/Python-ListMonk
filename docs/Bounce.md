@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.bounce import Bounce
+from listmonk.models.bounce import Bounce
 
 # TODO update the JSON string below
 json = "{}"

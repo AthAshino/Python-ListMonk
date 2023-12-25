@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.handle_public_subscription_request import HandlePublicSubscriptionRequest
+from listmonk.models.handle_public_subscription_request import HandlePublicSubscriptionRequest
 
 # TODO update the JSON string below
 json = "{}"

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.dashboard_count_data_subscribers import DashboardCountDataSubscribers
+from listmonk.models.dashboard_count_data_subscribers import DashboardCountDataSubscribers
 
 # TODO update the JSON string below
 json = "{}"

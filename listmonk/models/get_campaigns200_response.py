@@ -20,7 +20,7 @@ import json
 
 from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel
-from listmonk_client.models.get_campaigns200_response_data import GetCampaigns200ResponseData
+from listmonk.models.get_campaigns200_response_data import GetCampaigns200ResponseData
 try:
     from typing import Self
 except ImportError:

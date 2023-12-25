@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.campaign_request_send_at import CampaignRequestSendAt
+from listmonk.models.campaign_request_send_at import CampaignRequestSendAt
 
 # TODO update the JSON string below
 json = "{}"

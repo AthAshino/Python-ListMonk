@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.dashboard_chart_link_clicks_inner import DashboardChartLinkClicksInner
+from listmonk.models.dashboard_chart_link_clicks_inner import DashboardChartLinkClicksInner
 
 # TODO update the JSON string below
 json = "{}"

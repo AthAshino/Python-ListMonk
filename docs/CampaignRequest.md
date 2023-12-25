@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.campaign_request import CampaignRequest
+from listmonk.models.campaign_request import CampaignRequest
 
 # TODO update the JSON string below
 json = "{}"

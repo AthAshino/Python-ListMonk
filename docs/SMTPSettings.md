@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.smtp_settings import SMTPSettings
+from listmonk.models.smtp_settings import SMTPSettings
 
 # TODO update the JSON string below
 json = "{}"

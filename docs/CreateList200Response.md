@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.create_list200_response import CreateList200Response
+from listmonk.models.create_list200_response import CreateList200Response
 
 # TODO update the JSON string below
 json = "{}"

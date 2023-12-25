@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.get_public_lists200_response_inner import GetPublicLists200ResponseInner
+from listmonk.models.get_public_lists200_response_inner import GetPublicLists200ResponseInner
 
 # TODO update the JSON string below
 json = "{}"

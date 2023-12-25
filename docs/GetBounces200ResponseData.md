@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.get_bounces200_response_data import GetBounces200ResponseData
+from listmonk.models.get_bounces200_response_data import GetBounces200ResponseData
 
 # TODO update the JSON string below
 json = "{}"

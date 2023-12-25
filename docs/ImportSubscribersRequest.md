@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.import_subscribers_request import ImportSubscribersRequest
+from listmonk.models.import_subscribers_request import ImportSubscribersRequest
 
 # TODO update the JSON string below
 json = "{}"

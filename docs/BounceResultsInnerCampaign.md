@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.bounce_results_inner_campaign import BounceResultsInnerCampaign
+from listmonk.models.bounce_results_inner_campaign import BounceResultsInnerCampaign
 
 # TODO update the JSON string below
 json = "{}"

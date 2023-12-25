@@ -20,7 +20,7 @@ import json
 
 from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel
-from listmonk_client.models.dashboard_count import DashboardCount
+from listmonk.models.dashboard_count import DashboardCount
 try:
     from typing import Self
 except ImportError:

@@ -20,7 +20,7 @@ import json
 
 from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel, StrictBool, StrictStr
-from listmonk_client.models.server_config_data_langs_inner import ServerConfigDataLangsInner
+from listmonk.models.server_config_data_langs_inner import ServerConfigDataLangsInner
 try:
     from typing import Self
 except ImportError:

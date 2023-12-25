@@ -34,15 +34,15 @@ handles campaign creation
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.campaign_request import CampaignRequest
-from listmonk_client.models.create_campaign200_response import CreateCampaign200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.campaign_request import CampaignRequest
+from listmonk.models.create_campaign200_response import CreateCampaign200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -52,16 +52,16 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
-    campaign_request = listmonk_client.CampaignRequest()  # CampaignRequest | new campaign info (optional)
+    api_instance = listmonk.CampaignsApi(api_client)
+    campaign_request = listmonk.CampaignRequest()  # CampaignRequest | new campaign info (optional)
     
     try:
         api_response = api_instance.create_campaign(campaign_request=campaign_request)
@@ -113,15 +113,15 @@ handles campaign content (body) format conversions.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.campaign_content_request import CampaignContentRequest
-from listmonk_client.models.get_import_subscriber_stats200_response import GetImportSubscriberStats200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.campaign_content_request import CampaignContentRequest
+from listmonk.models.get_import_subscriber_stats200_response import GetImportSubscriberStats200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -131,17 +131,17 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     id = 56  # int | ID of campaign that you choose to create content
-    campaign_content_request = listmonk_client.CampaignContentRequest()  # CampaignContentRequest | updated campaign content (optional)
+    campaign_content_request = listmonk.CampaignContentRequest()  # CampaignContentRequest | updated campaign content (optional)
     
     try:
         api_response = api_instance.create_campaign_content_by_id(id, campaign_content_request=campaign_content_request)
@@ -194,14 +194,14 @@ deletes specified campaign
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -211,15 +211,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     id = 56  # int | The id value of the campaign you want to get.
     
     try:
@@ -272,14 +272,14 @@ retrieves view counts for a campaign.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_campaign_analytics200_response import GetCampaignAnalytics200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_campaign_analytics200_response import GetCampaignAnalytics200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -289,15 +289,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     type = 'type_example'  # str | type of stats, either links, view, click or bounce
     var_from = 'var_from_example'  # str | start value of date range
     to = 'to_example'  # str | end value of date range
@@ -356,14 +356,14 @@ handles retrieval of campaigns.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_campaign_by_id200_response import GetCampaignById200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_campaign_by_id200_response import GetCampaignById200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -373,15 +373,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     id = 56  # int | The id value of the campaign you want to get.
     no_body = True  # bool | boolean flag for response with/without body (optional)
     
@@ -436,14 +436,14 @@ handles retrieval of campaigns
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_campaigns200_response import GetCampaigns200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_campaigns200_response import GetCampaigns200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -453,15 +453,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     status = ['status_example']  # List[str] | status flag of campaign (optional)
     no_body = True  # bool | boolean flag for response with/without body (optional)
     page = 56  # int | total number of pages (optional)
@@ -527,14 +527,14 @@ returns stats of a given set of campaign IDs.
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_running_campaign_stats200_response import GetRunningCampaignStats200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_running_campaign_stats200_response import GetRunningCampaignStats200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -544,15 +544,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     
     try:
         api_response = api_instance.get_running_campaign_stats()
@@ -601,13 +601,13 @@ renders the HTML preview of a campaign body
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -617,15 +617,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     id = 56  # int | The id value of the campaign you want to get the preview of
     template_id = 56  # int | template id (optional)
     
@@ -680,13 +680,13 @@ renders the HTML preview of a campaign body
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -696,15 +696,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     id = 56  # int | The id value of the campaign you want to get the preview of
     template_id = 56  # int | template id (optional)
     content_type = 'content_type_example'  # str | content type (optional)
@@ -763,14 +763,14 @@ handles sending of campaign message to arbitrary subscribers for testing
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -780,15 +780,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     id = 56  # int | ID of campaign that you want to test
     template_id = 56  # int | template id (optional)
     
@@ -843,15 +843,15 @@ handles campaign status modification
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_health_check200_response import GetHealthCheck200Response
-from listmonk_client.models.update_campaign_archive_by_id_request import UpdateCampaignArchiveByIdRequest
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_health_check200_response import GetHealthCheck200Response
+from listmonk.models.update_campaign_archive_by_id_request import UpdateCampaignArchiveByIdRequest
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -861,17 +861,17 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     id = 56  # int | The id value of the campaign you want to get the preview of
-    update_campaign_archive_by_id_request = listmonk_client.UpdateCampaignArchiveByIdRequest()  # UpdateCampaignArchiveByIdRequest | archive campaign related parameters (optional)
+    update_campaign_archive_by_id_request = listmonk.UpdateCampaignArchiveByIdRequest()  # UpdateCampaignArchiveByIdRequest | archive campaign related parameters (optional)
     
     try:
         api_response = api_instance.update_campaign_archive_by_id(id,
@@ -925,15 +925,15 @@ handle updation of campaign
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.campaign_request import CampaignRequest
-from listmonk_client.models.create_campaign200_response import CreateCampaign200Response
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.campaign_request import CampaignRequest
+from listmonk.models.create_campaign200_response import CreateCampaign200Response
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -943,17 +943,17 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     id = 56  # int | the id value of campaign you want to update
-    campaign_request = listmonk_client.CampaignRequest()  # CampaignRequest | updated campaign fields (optional)
+    campaign_request = listmonk.CampaignRequest()  # CampaignRequest | updated campaign fields (optional)
     
     try:
         api_response = api_instance.update_campaign_by_id(id, campaign_request=campaign_request)
@@ -1006,15 +1006,15 @@ handles campaign status modification
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.models.get_campaign_by_id200_response import GetCampaignById200Response
-from listmonk_client.models.update_campaign_status_by_id_request import UpdateCampaignStatusByIdRequest
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.models.get_campaign_by_id200_response import GetCampaignById200Response
+from listmonk.models.update_campaign_status_by_id_request import UpdateCampaignStatusByIdRequest
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -1024,17 +1024,17 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     id = 56  # int | The id value of the campaign you want to get the preview of
-    update_campaign_status_by_id_request = listmonk_client.UpdateCampaignStatusByIdRequest()  # UpdateCampaignStatusByIdRequest | campaign status update (optional)
+    update_campaign_status_by_id_request = listmonk.UpdateCampaignStatusByIdRequest()  # UpdateCampaignStatusByIdRequest | campaign status update (optional)
     
     try:
         api_response = api_instance.update_campaign_status_by_id(id,
@@ -1088,13 +1088,13 @@ renders the HTML preview of a campaign body
 ```python
 import time
 import os
-import listmonk_client
-from listmonk_client.rest import ApiException
+import listmonk
+from listmonk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:9000/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     host="http://localhost:9000/api"
 )
 
@@ -1104,15 +1104,15 @@ configuration = listmonk_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: basicAuth
-configuration = listmonk_client.Configuration(
+configuration = listmonk.Configuration(
     username=os.environ["USERNAME"],
     password=os.environ["PASSWORD"]
 )
 
 # Enter a context with an instance of the API client
-with listmonk_client.ApiClient(configuration) as api_client:
+with listmonk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = listmonk_client.CampaignsApi(api_client)
+    api_instance = listmonk.CampaignsApi(api_client)
     id = 56  # int | The id value of the campaign you want to get the preview of
     template_id = 56  # int | template id (optional)
     content_type = 'content_type_example'  # str | content type (optional)

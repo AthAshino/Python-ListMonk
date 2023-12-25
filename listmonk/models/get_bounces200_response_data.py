@@ -20,7 +20,7 @@ import json
 
 from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel, StrictInt, StrictStr
-from listmonk_client.models.bounce import Bounce
+from listmonk.models.bounce import Bounce
 try:
     from typing import Self
 except ImportError:

@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from listmonk_client.models.smtp_test import SMTPTest
+from listmonk.models.smtp_test import SMTPTest
 
 # TODO update the JSON string below
 json = "{}"
