@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "openapi_client"
-version = "1.0.0"
+name = "python-listmonk"
+version = "0.0.1"
 description = "Listmonk"
 authors = ["OpenAPI Generator Community <team@openapitools.org>"]
 license = "AGPL-3.0 license"
