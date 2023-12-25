@@ -37,20 +37,20 @@ class TestGetSubscribers200ResponseData(unittest.TestCase):
         if include_optional:
             return GetSubscribers200ResponseData(
                 results = [
-                    listmonk_client.models.subscriber.Subscriber(
+                    listmonk.models.subscriber.Subscriber(
                         id = 56, 
                         created_at = '', 
                         updated_at = '', 
                         uuid = '', 
                         email = '', 
                         name = '', 
-                        attribs = listmonk_client.models.subscriber_profile_attribs.SubscriberProfile_attribs(
+                        attribs = listmonk.models.subscriber_profile_attribs.SubscriberProfile_attribs(
                             city = '', 
                             good = True, 
                             type = '', ), 
                         status = '', 
                         lists = [
-                            listmonk_client.models.subscriber_lists_inner.Subscriber_lists_inner(
+                            listmonk.models.subscriber_lists_inner.Subscriber_lists_inner(
                                 subscription_status = '', 
                                 id = 56, 
                                 uuid = '', 

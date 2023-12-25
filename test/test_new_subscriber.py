@@ -46,10 +46,10 @@ class TestNewSubscriber(unittest.TestCase):
                     ''
                     ],
                 preconfirm_subscriptions = True,
-                attribs = listmonk_client.models.new_subscriber_attribs.NewSubscriber_attribs(
+                attribs = listmonk.models.new_subscriber_attribs.NewSubscriber_attribs(
                     city = '', 
                     projects = 56, 
-                    stack = listmonk_client.models.new_subscriber_attribs_stack.NewSubscriber_attribs_stack(
+                    stack = listmonk.models.new_subscriber_attribs_stack.NewSubscriber_attribs_stack(
                         languages = [
                             ''
                             ], ), )

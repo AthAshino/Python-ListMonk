@@ -36,7 +36,7 @@ class TestCreateList200Response(unittest.TestCase):
         model = CreateList200Response()
         if include_optional:
             return CreateList200Response(
-                data = listmonk_client.models.list.List(
+                data = listmonk.models.list.List(
                     id = 56, 
                     created_at = '', 
                     updated_at = '', 

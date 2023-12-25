@@ -37,7 +37,7 @@ class TestGetMedia200Response(unittest.TestCase):
         if include_optional:
             return GetMedia200Response(
                 data = [
-                    listmonk_client.models.media_file_object.MediaFileObject(
+                    listmonk.models.media_file_object.MediaFileObject(
                         id = 56, 
                         uuid = '', 
                         filename = '', 

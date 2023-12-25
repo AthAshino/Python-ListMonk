@@ -36,8 +36,8 @@ class TestGetImportSubscribers200Response(unittest.TestCase):
         model = GetImportSubscribers200Response()
         if include_optional:
             return GetImportSubscribers200Response(
-                data = listmonk_client.models.import_status.ImportStatus(
-                    data = listmonk_client.models.import_status_data.ImportStatus_data(
+                data = listmonk.models.import_status.ImportStatus(
+                    data = listmonk.models.import_status_data.ImportStatus_data(
                         name = '', 
                         total = 56, 
                         imported = 56, 

@@ -49,7 +49,7 @@ class TestCampaignRequest(unittest.TestCase):
                     ''
                     ],
                 send_later = True,
-                send_at = listmonk_client.models.campaign_request_send_at.CampaignRequest_send_at(
+                send_at = listmonk.models.campaign_request_send_at.CampaignRequest_send_at(
                     headers = [
                         None
                         ], 

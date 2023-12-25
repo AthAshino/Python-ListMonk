@@ -38,12 +38,12 @@ class TestSubscriberData(unittest.TestCase):
             return SubscriberData(
                 email = '',
                 profile = [
-                    listmonk_client.models.subscriber_profile.SubscriberProfile(
+                    listmonk.models.subscriber_profile.SubscriberProfile(
                         id = 56, 
                         uuid = '', 
                         email = '', 
                         name = '', 
-                        attribs = listmonk_client.models.subscriber_profile_attribs.SubscriberProfile_attribs(
+                        attribs = listmonk.models.subscriber_profile_attribs.SubscriberProfile_attribs(
                             city = '', 
                             good = True, 
                             type = '', ), 
@@ -52,7 +52,7 @@ class TestSubscriberData(unittest.TestCase):
                         updated_at = '', )
                     ],
                 subscriptions = [
-                    listmonk_client.models.subscriptions.Subscriptions(
+                    listmonk.models.subscriptions.Subscriptions(
                         subscription_status = '', 
                         name = '', 
                         type = '', 

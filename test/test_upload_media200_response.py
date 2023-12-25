@@ -36,7 +36,7 @@ class TestUploadMedia200Response(unittest.TestCase):
         model = UploadMedia200Response()
         if include_optional:
             return UploadMedia200Response(
-                data = listmonk_client.models.media_file_object.MediaFileObject(
+                data = listmonk.models.media_file_object.MediaFileObject(
                     id = 56, 
                     uuid = '', 
                     filename = '', 

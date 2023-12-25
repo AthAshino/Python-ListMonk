@@ -40,7 +40,7 @@ class TestSubscriberProfile(unittest.TestCase):
                 uuid = '',
                 email = '',
                 name = '',
-                attribs = listmonk_client.models.subscriber_profile_attribs.SubscriberProfile_attribs(
+                attribs = listmonk.models.subscriber_profile_attribs.SubscriberProfile_attribs(
                     city = '', 
                     good = True, 
                     type = '', ),

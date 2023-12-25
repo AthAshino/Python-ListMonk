@@ -37,12 +37,12 @@ class TestDashboardChart(unittest.TestCase):
         if include_optional:
             return DashboardChart(
                 link_clicks = [
-                    listmonk_client.models.dashboard_chart_link_clicks_inner.DashboardChart_link_clicks_inner(
+                    listmonk.models.dashboard_chart_link_clicks_inner.DashboardChart_link_clicks_inner(
                         count = 56, 
                         date = '', )
                     ],
                 campaign_views = [
-                    listmonk_client.models.dashboard_chart_link_clicks_inner.DashboardChart_link_clicks_inner(
+                    listmonk.models.dashboard_chart_link_clicks_inner.DashboardChart_link_clicks_inner(
                         count = 56, 
                         date = '', )
                     ]

@@ -36,7 +36,7 @@ class TestLanguagePack(unittest.TestCase):
         model = LanguagePack()
         if include_optional:
             return LanguagePack(
-                data = listmonk_client.models.language_pack_data.LanguagePack_data(
+                data = listmonk.models.language_pack_data.LanguagePack_data(
                     _/code = '', 
                     _/name = '', 
                     admin/error_marshalling_config = '', 

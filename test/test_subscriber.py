@@ -42,13 +42,13 @@ class TestSubscriber(unittest.TestCase):
                 uuid = '',
                 email = '',
                 name = '',
-                attribs = listmonk_client.models.subscriber_profile_attribs.SubscriberProfile_attribs(
+                attribs = listmonk.models.subscriber_profile_attribs.SubscriberProfile_attribs(
                     city = '', 
                     good = True, 
                     type = '', ),
                 status = '',
                 lists = [
-                    listmonk_client.models.subscriber_lists_inner.Subscriber_lists_inner(
+                    listmonk.models.subscriber_lists_inner.Subscriber_lists_inner(
                         subscription_status = '', 
                         id = 56, 
                         uuid = '', 

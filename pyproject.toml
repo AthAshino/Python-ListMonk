@@ -7,8 +7,10 @@ license = "AGPL-3.0 license"
 readme = "README.md"
 repository = "https://github.com/GIT_USER_ID/GIT_REPO_ID"
 keywords = ["OpenAPI", "OpenAPI-Generator", "Listmonk"]
-include = ["openapi_client/py.typed"]
+include = ["listmonk/py.typed"]
 
+[[tool.poetry.packages]]
+include = "listmonk"
 [tool.poetry.dependencies]
 python = "^3.7"
 
@@ -35,3 +37,11 @@ version_toml = [ "pyproject.toml:tool.poetry.version",]
 branch = "main"
 build_command = "pip install poetry && poetry build"
 commit_parser = "emoji"
+
+[tool.semantic_release.commit_parser_options]
+major_tags = [ ":boom:", "💥",]
+minor_tags = [ ":sparkles:", "✨",]
+patch_tags = [ ":zap:", "⚡️", ":bug:", "🐛", ":ambulance:", "🚑️", ":lipstick:", "💄", ":lock:", "🔒️", ":arrow_down:", "⬇️", ":arrow_up:", "⬆️", ":pushpin:", "📌", ":chart_with_upwards_trend:", "📈", ":heavy_plus_sign:", "➕", ":heavy_minus_sign:", "➖", ":wrench:", "🔧", ":globe_with_meridians:", "🌐", ":pencil2:", "✏️", ":rewind:", "⏪️", ":package:", "📦️", ":alien:", "👽️", ":bento:", "🍱", ":wheelchair:", "♿️", ":speech_balloon:", "💬", ":card_file_box:", "🗃️", ":children_crossing:", "🚸", ":iphone:", "📱", ":egg:", "🥚", ":alembic:", "⚗️", ":mag:", "🔍️", ":label:", "🏷️", ":triangular_flag_on_post:", "🚩", ":goal_net:", "🥅", ":dizzy:", "💫", ":wastebasket:", "🗑️", ":passport_control:", "🛂", ":adhesive_bandage:", "🩹", ":necktie:", "👔",]
+
+[tool.semantic_release.changelog]
+template_dir = "templates"

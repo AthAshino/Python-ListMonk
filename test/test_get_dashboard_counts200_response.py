@@ -36,21 +36,21 @@ class TestGetDashboardCounts200Response(unittest.TestCase):
         model = GetDashboardCounts200Response()
         if include_optional:
             return GetDashboardCounts200Response(
-                data = listmonk_client.models.dashboard_count.DashboardCount(
-                    data = listmonk_client.models.dashboard_count_data.DashboardCount_data(
-                        subscribers = listmonk_client.models.dashboard_count_data_subscribers.DashboardCount_data_subscribers(
+                data = listmonk.models.dashboard_count.DashboardCount(
+                    data = listmonk.models.dashboard_count_data.DashboardCount_data(
+                        subscribers = listmonk.models.dashboard_count_data_subscribers.DashboardCount_data_subscribers(
                             total = 56, 
-                            blocklisted = listmonk_client.models.blocklisted.blocklisted(),
+                            blocklisted = listmonk.models.blocklisted.blocklisted(),
                             orphans = 56, ), 
-                        lists = listmonk_client.models.dashboard_count_data_lists.DashboardCount_data_lists(
+                        lists = listmonk.models.dashboard_count_data_lists.DashboardCount_data_lists(
                             total = 56, 
                             private = 56, 
                             public = 56, 
                             optin_single = 56, 
                             optin_double = 56, ), 
-                        campaigns = listmonk_client.models.dashboard_count_data_campaigns.DashboardCount_data_campaigns(
+                        campaigns = listmonk.models.dashboard_count_data_campaigns.DashboardCount_data_campaigns(
                             total = 56, 
-                            by_status = listmonk_client.models.dashboard_count_data_campaigns_by_status.DashboardCount_data_campaigns_by_status(
+                            by_status = listmonk.models.dashboard_count_data_campaigns_by_status.DashboardCount_data_campaigns_by_status(
                                 draft = 56, ), ), 
                         messages = 56, ), )
             )

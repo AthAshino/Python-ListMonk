@@ -28,7 +28,7 @@ REQUIRES = [
 ]
 
 setup(
-    name="python-listmonk",
+    name="listmonk",
     version="0.0.1",
     description="Listmonk",
     author="OpenAPI Generator community",
@@ -43,5 +43,5 @@ setup(
     long_description="""\
     The API collection for listmonk
     """,  # noqa: E501
-    package_data={"listmonk_client": ["py.typed"]},
+    package_data={"listmonk": ["py.typed"]},
 )

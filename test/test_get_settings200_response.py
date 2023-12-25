@@ -36,7 +36,7 @@ class TestGetSettings200Response(unittest.TestCase):
         model = GetSettings200Response()
         if include_optional:
             return GetSettings200Response(
-                data = listmonk_client.models.settings.Settings(
+                data = listmonk.models.settings.Settings(
                     app/site_name = '', 
                     app/root_url = '', 
                     app/logo_url = '', 
@@ -82,7 +82,7 @@ class TestGetSettings200Response(unittest.TestCase):
                     upload/s3/bucket_type = '', 
                     upload/s3/expiry = '', 
                     smtp = [
-                        listmonk_client.models.smtp_settings.SMTPSettings(
+                        listmonk.models.smtp_settings.SMTPSettings(
                             uuid = '', 
                             enabled = True, 
                             host = '', 
@@ -114,7 +114,7 @@ class TestGetSettings200Response(unittest.TestCase):
                     bounce/postmark_username = '', 
                     bounce/postmark_password = '', 
                     bounce/mailboxes = [
-                        listmonk_client.models.mail_box_bounces.MailBoxBounces(
+                        listmonk.models.mail_box_bounces.MailBoxBounces(
                             uuid = '', 
                             enabled = True, 
                             type = '', 

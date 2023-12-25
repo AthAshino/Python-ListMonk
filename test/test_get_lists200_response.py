@@ -36,9 +36,9 @@ class TestGetLists200Response(unittest.TestCase):
         model = GetLists200Response()
         if include_optional:
             return GetLists200Response(
-                data = listmonk_client.models.get_lists_200_response_data.getLists_200_response_data(
+                data = listmonk.models.get_lists_200_response_data.getLists_200_response_data(
                     results = [
-                        listmonk_client.models.list.List(
+                        listmonk.models.list.List(
                             id = 56, 
                             created_at = '', 
                             updated_at = '', 

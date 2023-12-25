@@ -40,7 +40,7 @@ class TestServerConfigData(unittest.TestCase):
                     ''
                     ],
                 langs = [
-                    listmonk_client.models.server_config_data_langs_inner.ServerConfig_data_langs_inner(
+                    listmonk.models.server_config_data_langs_inner.ServerConfig_data_langs_inner(
                         code = '', 
                         name = '', )
                     ],

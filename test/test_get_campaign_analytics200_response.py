@@ -37,7 +37,7 @@ class TestGetCampaignAnalytics200Response(unittest.TestCase):
         if include_optional:
             return GetCampaignAnalytics200Response(
                 data = [
-                    listmonk_client.models.campaign_analytics_count.CampaignAnalyticsCount(
+                    listmonk.models.campaign_analytics_count.CampaignAnalyticsCount(
                         campaign_id = 56, 
                         count = 56, 
                         timestamp = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )

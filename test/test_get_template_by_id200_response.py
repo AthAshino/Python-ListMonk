@@ -36,7 +36,7 @@ class TestGetTemplateById200Response(unittest.TestCase):
         model = GetTemplateById200Response()
         if include_optional:
             return GetTemplateById200Response(
-                data = listmonk_client.models.template.Template(
+                data = listmonk.models.template.Template(
                     id = 56, 
                     created_at = '', 
                     updated_at = '', 

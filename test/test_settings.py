@@ -81,7 +81,7 @@ class TestSettings(unittest.TestCase):
                 upload_s3_bucket_type = '',
                 upload_s3_expiry = '',
                 smtp = [
-                    listmonk_client.models.smtp_settings.SMTPSettings(
+                    listmonk.models.smtp_settings.SMTPSettings(
                         uuid = '', 
                         enabled = True, 
                         host = '', 
@@ -113,7 +113,7 @@ class TestSettings(unittest.TestCase):
                 bounce_postmark_username = '',
                 bounce_postmark_password = '',
                 bounce_mailboxes = [
-                    listmonk_client.models.mail_box_bounces.MailBoxBounces(
+                    listmonk.models.mail_box_bounces.MailBoxBounces(
                         uuid = '', 
                         enabled = True, 
                         type = '', 

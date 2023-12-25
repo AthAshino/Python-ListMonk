@@ -37,7 +37,7 @@ class TestDashboardCountDataCampaigns(unittest.TestCase):
         if include_optional:
             return DashboardCountDataCampaigns(
                 total = 56,
-                by_status = listmonk_client.models.dashboard_count_data_campaigns_by_status.DashboardCount_data_campaigns_by_status(
+                by_status = listmonk.models.dashboard_count_data_campaigns_by_status.DashboardCount_data_campaigns_by_status(
                     draft = 56, )
             )
         else:

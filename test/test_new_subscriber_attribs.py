@@ -38,7 +38,7 @@ class TestNewSubscriberAttribs(unittest.TestCase):
             return NewSubscriberAttribs(
                 city = '',
                 projects = 56,
-                stack = listmonk_client.models.new_subscriber_attribs_stack.NewSubscriber_attribs_stack(
+                stack = listmonk.models.new_subscriber_attribs_stack.NewSubscriber_attribs_stack(
                     languages = [
                         ''
                         ], )

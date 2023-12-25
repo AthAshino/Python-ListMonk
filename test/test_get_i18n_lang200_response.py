@@ -36,8 +36,8 @@ class TestGetI18nLang200Response(unittest.TestCase):
         model = GetI18nLang200Response()
         if include_optional:
             return GetI18nLang200Response(
-                data = listmonk_client.models.language_pack.LanguagePack(
-                    data = listmonk_client.models.language_pack_data.LanguagePack_data(
+                data = listmonk.models.language_pack.LanguagePack(
+                    data = listmonk.models.language_pack_data.LanguagePack_data(
                         _/code = '', 
                         _/name = '', 
                         admin/error_marshalling_config = '', 

@@ -64,7 +64,7 @@ class Configuration:
 
     Configure API client with HTTP basic authentication:
 
-conf = listmonk_client.Configuration(
+conf = listmonk.Configuration(
     username='the-user',
     password='the-password',
 )
@@ -123,7 +123,7 @@ conf = listmonk_client.Configuration(
         self.logger = {}
         """Logging Settings
         """
-        self.logger["package_logger"] = logging.getLogger("listmonk_client")
+        self.logger["package_logger"] = logging.getLogger("listmonk")
         self.logger["urllib3_logger"] = logging.getLogger("urllib3")
         self.logger_format = '%(asctime)s %(levelname)s %(message)s'
         """Log format

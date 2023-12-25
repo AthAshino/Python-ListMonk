@@ -36,9 +36,9 @@ class TestGetBounces200Response(unittest.TestCase):
         model = GetBounces200Response()
         if include_optional:
             return GetBounces200Response(
-                data = listmonk_client.models.get_bounces_200_response_data.getBounces_200_response_data(
+                data = listmonk.models.get_bounces_200_response_data.getBounces_200_response_data(
                     results = [
-                        listmonk_client.models.bounce.Bounce()
+                        listmonk.models.bounce.Bounce()
                         ], 
                     query = '', 
                     total = 56, 

@@ -36,7 +36,7 @@ class TestCreateCampaign200Response(unittest.TestCase):
         model = CreateCampaign200Response()
         if include_optional:
             return CreateCampaign200Response(
-                data = listmonk_client.models.campaign_update.CampaignUpdate(
+                data = listmonk.models.campaign_update.CampaignUpdate(
                     name = '', 
                     subject = '', 
                     lists = [
@@ -49,7 +49,7 @@ class TestCreateCampaign200Response(unittest.TestCase):
                         ''
                         ], 
                     send_later = True, 
-                    send_at = listmonk_client.models.send_at.send_at(),
+                    send_at = listmonk.models.send_at.send_at(),
                     headers = [
                         None
                         ], 
@@ -59,7 +59,7 @@ class TestCreateCampaign200Response(unittest.TestCase):
                     altbody = '', 
                     archive = True, 
                     archive_template_id = 56, 
-                    archive_meta = listmonk_client.models.archive_meta.archive_meta(), )
+                    archive_meta = listmonk.models.archive_meta.archive_meta(), )
             )
         else:
             return CreateCampaign200Response(

@@ -36,9 +36,9 @@ class TestGetCampaigns200Response(unittest.TestCase):
         model = GetCampaigns200Response()
         if include_optional:
             return GetCampaigns200Response(
-                data = listmonk_client.models.get_campaigns_200_response_data.getCampaigns_200_response_data(
+                data = listmonk.models.get_campaigns_200_response_data.getCampaigns_200_response_data(
                     results = [
-                        listmonk_client.models.campaign.Campaign(
+                        listmonk.models.campaign.Campaign(
                             id = 56, 
                             created_at = '', 
                             updated_at = '', 
@@ -46,7 +46,7 @@ class TestGetCampaigns200Response(unittest.TestCase):
                             views = 56, 
                             clicks = 56, 
                             lists = [
-                                listmonk_client.models.bounce_results_inner_campaign.Bounce_results_inner_campaign(
+                                listmonk.models.bounce_results_inner_campaign.Bounce_results_inner_campaign(
                                     id = 56, 
                                     name = '', )
                                 ], 

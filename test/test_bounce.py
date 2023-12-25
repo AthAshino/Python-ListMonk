@@ -37,16 +37,16 @@ class TestBounce(unittest.TestCase):
         if include_optional:
             return Bounce(
                 results = [
-                    listmonk_client.models.bounce_results_inner.Bounce_results_inner(
+                    listmonk.models.bounce_results_inner.Bounce_results_inner(
                         id = 56, 
                         type = '', 
                         source = '', 
-                        meta = listmonk_client.models.meta.meta(),
+                        meta = listmonk.models.meta.meta(),
                         created_at = '', 
                         email = '', 
                         subscriber_uuid = '', 
                         subscriber_id = 56, 
-                        campaign = listmonk_client.models.bounce_results_inner_campaign.Bounce_results_inner_campaign(
+                        campaign = listmonk.models.bounce_results_inner_campaign.Bounce_results_inner_campaign(
                             id = 56, 
                             name = '', ), 
                         campaign_uuid = '', 

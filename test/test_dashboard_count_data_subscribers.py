@@ -37,7 +37,7 @@ class TestDashboardCountDataSubscribers(unittest.TestCase):
         if include_optional:
             return DashboardCountDataSubscribers(
                 total = 56,
-                blocklisted = listmonk_client.models.blocklisted.blocklisted(),
+                blocklisted = listmonk.models.blocklisted.blocklisted(),
                 orphans = 56
             )
         else:

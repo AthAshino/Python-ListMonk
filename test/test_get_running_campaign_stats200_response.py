@@ -37,7 +37,7 @@ class TestGetRunningCampaignStats200Response(unittest.TestCase):
         if include_optional:
             return GetRunningCampaignStats200Response(
                 data = [
-                    listmonk_client.models.campaign_stats.CampaignStats(
+                    listmonk.models.campaign_stats.CampaignStats(
                         id = 56, 
                         status = '', 
                         to_send = 56, 

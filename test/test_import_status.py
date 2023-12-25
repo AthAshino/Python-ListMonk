@@ -36,7 +36,7 @@ class TestImportStatus(unittest.TestCase):
         model = ImportStatus()
         if include_optional:
             return ImportStatus(
-                data = listmonk_client.models.import_status_data.ImportStatus_data(
+                data = listmonk.models.import_status_data.ImportStatus_data(
                     name = '', 
                     total = 56, 
                     imported = 56, 

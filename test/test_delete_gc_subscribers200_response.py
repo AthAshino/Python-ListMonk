@@ -36,7 +36,7 @@ class TestDeleteGCSubscribers200Response(unittest.TestCase):
         model = DeleteGCSubscribers200Response()
         if include_optional:
             return DeleteGCSubscribers200Response(
-                data = listmonk_client.models.delete_gc_subscribers_200_response_data.deleteGCSubscribers_200_response_data(
+                data = listmonk.models.delete_gc_subscribers_200_response_data.deleteGCSubscribers_200_response_data(
                     count = 56, )
             )
         else:

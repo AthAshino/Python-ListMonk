@@ -36,12 +36,12 @@ class TestServerConfig(unittest.TestCase):
         model = ServerConfig()
         if include_optional:
             return ServerConfig(
-                data = listmonk_client.models.server_config_data.ServerConfig_data(
+                data = listmonk.models.server_config_data.ServerConfig_data(
                     messengers = [
                         ''
                         ], 
                     langs = [
-                        listmonk_client.models.server_config_data_langs_inner.ServerConfig_data_langs_inner(
+                        listmonk.models.server_config_data_langs_inner.ServerConfig_data_langs_inner(
                             code = '', 
                             name = '', )
                         ], 
